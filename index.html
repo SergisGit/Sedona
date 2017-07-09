@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-index">
+	
+		<header class="main-header">
+			<nav class="main-nav">
+				<ul class="flex">
+					<li><a href="information.html">ИНФОРМАЦИЯ</a></li>
+					<li><a href="photoVideo.html">ФОТО И ВИДЕО</a></li>
+					<li class="index-href">
+						<a href="index.html"><img src="img/menu-logo.png" alt="logo"></a>
+					</li>
+					<li><a href="map.html">КАРТА ШТАТА</a></li>
+					<li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main-index flex">
+			<div class="greetings">
+				<p class="greetings-welcome">WELCOME</p>
+				<p class="greetings-gorgeouse">to the gorgeouse</p>
+				<h1 class="greetings-SEDONA">SEDONA</h1>
+				<p class="greetings-tagline">"Because the Grand<br>Canyon sucks!"</p>
+			</div>
+			<div class="description">
+				<p class="definition">CЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+				<p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+			</div>
+			<div class="promo-block reason-blue">
+				<p class="definition">НАСТОЯЩИЙ<br>ГОРОДОК</p>
+				<p class="reason-number"> — №1 — </p>
+				<p>СЕДОНА — НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+			</div>
+			<div class="promo-block sedona-view view-city"></div>
+			<div class="promo-block benefits house">
+				<p class="definition">ЖИЛЬЕ</p>
+				<p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+			</div>
+			<div class="promo-block benefits food">
+				<p class="definition">ЕДА</p>
+				<p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ&nbspНЕ РАЗОЧАРУЕТЕСЬ!</p>
+			</div>
+			<div class="promo-block benefits souvenir">
+				<p class="definition">СУВЕНИРЫ</p>
+				<p>НЕ ТОЛЬКО КИТАЙСКОГО, НО&nbspИ&nbspМЕСТНОГО ПРОИЗВОДСТВА!</p>
+			</div>
+			<div class="promo-block sedona-view view-canyon"></div>
+			<div class="promo-block reason-blue">
+				<p class="definition">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</p>
+				<p class="reason-number"> — №2 — </p>
+				<p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ&nbspКОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+			</div>
+			<div class="promo-block reason-gray">
+				<p class="definition">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</p>
+				<p class="reason-number"> — №3 — </p>
+				<p>ВСЕ ДОСТОПРИМЕЧА&shyТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+			</div>
+			<div class="promo-block reason-gray">
+				<p class="definition">КРАСИВАЯ<br>ДОРОГА</p>
+				<p class="reason-number"> — №4 — </p>
+				<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС&nbsp-&nbspВЕГАСА СОВСЕМ НЕ&nbspСКУЧНО!</p>
+			</div>
+			<div class="promo-block reason-gray">
+				<p class="definition">МАЛО<br>ТУРИСТОВ</p>
+				<p class="reason-number"> — №5 — </p>
+				<p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ&nbspТАМ</p>
+			</div>
+			<div class="concernment">
+				<p class="definition">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+				<p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+
+				<form action="https://echo.htmlacademy.ru" method="post" class="search-form">
+					<h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+
+					<div class="search-form-box flex">
+
+						<label for="checkin">ДАТА ЗАЕЗДА:</label>
+						<input type="text" id="checkin" name="checkin" class="date-input" value="24 АПРЕЛЯ 2017">
+						<label for="checkout">ДАТА ВЫЕЗДА:</label>
+						<input type="text" id="checkout" name="checkout" class="date-input" value="4 ИЮЛЯ 2017">
+
+						<div class="adults-quantity flex">
+							<label for="adults">ВЗРОСЛЫЕ:</label>
+							<div class="quantity-box">
+								<a class="quantity-box-minus" href="#">–</a>
+								<input type="text" class="number-of-people" name="adults" id="adults" pattern="[1-9]|(0[1-9])|([1-9][0-9])" value="2">
+								<a class="quantity-box-plus" href="#">+</a>
+							</div>
+						</div>
+						<div class="children-quantity flex">
+							<label for="children">ДЕТИ:</label>
+							<div class="quantity-box">
+								<a class="quantity-box-minus" href="#">–</a>
+								<input type="text" class="number-of-people" name="children" id="children" pattern="[0-9]|(0[1-9])|([1-9][0-9])" value="0">
+								<a class="quantity-box-plus" href="#">+</a>
+							</div>
+						</div>
+						<button class="btn submit-btn" type="submit">НАЙТИ</button>
+					</div>
+				</form>
+			</div>
+			<div class="map"></div>
+		</main>
+
+		<footer class="main-footer flex">
+			<a class="Sedona-hashtag" href="#">#VISITSEDONA</a>
+			<div class="footer-socials flex">
+				<a href="#" class="btn-social btn-twit"></a>
+				<a href="#" class="btn-social btn-FB"></a>
+				<a href="#" class="btn-social btn-YT"></a>
+			</div>
+			<div class="footer-copyright flex">
+				<p>WEBSYTE BY</p>
+				<a href="https://htmlacademy.ru/" class="btn-academy"></a>
+			</div>
+		</footer>
+
+</body>
+
+</html>

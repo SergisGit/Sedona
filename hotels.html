@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-inner wrapper">
+	
+		<header class="main-header">
+			<nav class="main-nav">
+				<ul class="flex">
+					<li><a href="information.html">ИНФОРМАЦИЯ</a></li>
+					<li><a href="photoVideo.html">ФОТО И ВИДЕО</a></li>
+					<li class="index-href">
+						<a href="index.html"><img src="img/menu-logo.png" alt="logo"></a>
+					</li>
+					<li><a href="map.html">КАРТА ШТАТА</a></li>
+					<li><a href="hotels.html" class="current-page">ГОСТИНИЦЫ</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main-inner">
+			<form action="https://echo.htmlacademy.ru" method="post" class="booking-form flex">
+				<div class="filter-infrastructure">
+					<h3 class="filter-title">ИНФРАСТРУКТУРА:</h3>
+					<input type="checkbox" id="filter-pool" name="filter-pool" checked>
+					<label for="filter-pool">БАССЕЙН</label>
+					<input type="checkbox" id="filter-parking">
+					<label for="filter-parking">ПАРКОВКА</label>
+					<input type="checkbox" id="filter-wifi">
+					<label for="filter-wifi">WI-FI</label>
+				</div>
+				<div class="filter-housing">
+					<h3 class="filter-title">ТИП ЖИЛЬЯ:</h3>
+					<input type="checkbox" id="filter-hotel" name="filter-hotel" checked>
+					<label for="filter-hotel">ГОСТИНИЦА</label>
+					<input type="checkbox" id="filter-motel" name="filter-motel" checked>
+					<label for="filter-motel">МОТЕЛЬ</label>
+					<input type="checkbox" id="filter-apartment" name="filter-apartment" checked>
+					<label for="filter-apartment">АПАРТАМЕНТЫ</label>
+				</div>
+				
+				<div class="filter-price">
+					<h3 class="filter-price-title">СТОИМОСТЬ В СУТКИ (Р):</h3>
+					<div class="price-input-wrapper flex">
+						<div class="price-input-half flex">
+							<label for="filter-price-min">ОТ</label>
+							<input type="text" name="filter-price-min" id="filter-price-min" pattern="[0-9]|([1-9][0-9])|([1-9][0-9][0-9])|([1-4][0-9][0-9][0-9])" value="0" required>
+						</div>
+						<div class="price-input-half flex">
+							<label for="filter-price-max">ДО</label>
+							<input type="text" name="filter-price-max" pattern="[1-9]|([1-9][0-9])|([1-9][0-9][0-9])|([1-4][0-9][0-9][0-9])|5000" value="3500" required>
+						</div>
+					</div>
+					
+					<div class="filter-scale">
+						<div class="filter-bar"></div>
+						<div class="filter-toggle filter-min-toggle"></div>
+						<div class="filter-toggle filter-max-toggle"></div>
+					</div>
+					
+					<button type="submit" class="btn filter-btn">ПОКАЗАТЬ</button>
+				</div>
+			</form>
+
+			<section class="search-results">
+				<div class="search-found flex">
+					<h2>НАЙДЕНО:</h2>
+					<span class="results-quantity">3</span>
+					<span class="results-sorting">СОРТИРОВКА:</span>
+					<a href="#" class="sorting-type href-active">ПО ЦЕНЕ</a>
+					<a href="#" class="sorting-type">ПО ТИПУ</a>
+					<a href="#" class="sorting-type">ПО РЕЙТИГНУ</a>
+					<div class="sorting-up-down">
+						<a class="sorting-up" href="#">&#9650;</a>
+						<a class="sorting-down href-active" href="#">&#9660;</a>
+					</div>
+				</div>			
+			</section>
+			<section class="search-cards">
+				<div class="search-card flex">
+					<img src="img/amara_resort.jpg" alt="hotel view" width="134" height="90">
+					<div class="hotel-info">
+						<a href="#" class="hotel-name">AMARA RESORT & SPA</a>
+						<div class="hotel-details">
+							<span class="hotel-type">ГОСТИНИЦА</span>
+							<a href="#" class="hotel-detailed">ПОДРОБНЕЕ</a>
+						</div>
+						<div class="hotel-booking">
+							<span class="hotel-cost">ОТ 3500 Р.</span>
+							<a href="#" class="booking-href">ЗАБРОНИРОВАТЬ</a>
+						</div>
+					</div>
+					<div class="hotel-raiting">
+						<div class="hotel-stars four-stars"></div>
+						<div class="user-raiting">
+							<span>РЕЙТИНГ:</span>
+							<span class="user-raiting-numeral">8,5</span>
+						</div>
+					</div>
+				</div>
+				<div class="search-card flex">
+					<img src="img/desert_quail_inn.jpg" alt="hotel view" width="134" height="90">
+					<div class="hotel-info">
+						<a href="#" class="hotel-name">DESERT QUAIL INN</a>
+						<div class="hotel-details">
+							<span class="hotel-type">МОТЕЛЬ</span>
+							<a href="#" class="hotel-detailed">ПОДРОБНЕЕ</a>
+						</div>
+						<div class="hotel-booking">
+							<span class="hotel-cost">ОТ 2000 Р.</span>
+							<a href="#" class="booking-href">ЗАБРОНИРОВАТЬ</a>
+						</div>
+					</div>
+					<div class="hotel-raiting">
+						<div class="hotel-stars two-stars"></div>
+						<div class="user-raiting">
+							<span>РЕЙТИНГ:</span>
+							<span class="user-raiting-numeral">8,9</span>
+						</div>
+					</div>
+				</div>
+				<div class="search-card flex">
+					<img src="img/villas_at_poco.jpg" alt="hotel view" width="134" height="90">
+					<div class="hotel-info">
+						<a href="#" class="hotel-name">VILLAS AT POCO DIABLO</a>
+						<div class="hotel-details">
+							<span class="hotel-type">АПАРТАМЕНТЫ</span>
+							<a href="#" class="hotel-detailed">ПОДРОБНЕЕ</a>
+						</div>
+						<div class="hotel-booking">
+							<span class="hotel-cost">ОТ 4000 Р.</span>
+							<a href="#" class="booking-href">ЗАБРОНИРОВАТЬ</a>
+						</div>
+					</div>
+					<div class="hotel-raiting">
+						<div class="hotel-stars three-stars"></div>
+						<div class="user-raiting">
+							<span>РЕЙТИНГ:</span>
+							<span class="user-raiting-numeral">9,2</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	
+		<footer class="main-footer flex">
+			<a class="Sedona-hashtag" href="#">#VISITSEDONA</a>
+			<div class="footer-socials flex">
+				<a href="#" class="btn-social btn-twit"></a>
+				<a href="#" class="btn-social btn-FB"></a>
+				<a href="#" class="btn-social btn-YT"></a>
+			</div>
+			<div class="footer-copyright flex">
+				<p>WEBSYTE BY</p>
+				<a href="https://htmlacademy.ru/" class="btn-academy"></a>
+			</div>
+		</footer>
+
+</body>
+</html>
