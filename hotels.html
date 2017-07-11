@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Sedona</title>
 	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body-inner wrapper">
@@ -31,9 +30,9 @@
 					<h3 class="filter-title">ИНФРАСТРУКТУРА:</h3>
 					<input type="checkbox" id="filter-pool" name="filter-pool" checked>
 					<label for="filter-pool">БАССЕЙН</label>
-					<input type="checkbox" id="filter-parking">
+					<input type="checkbox" id="filter-parking" name="filter-parking">
 					<label for="filter-parking">ПАРКОВКА</label>
-					<input type="checkbox" id="filter-wifi">
+					<input type="checkbox" id="filter-wifi" name="filter-wifi">
 					<label for="filter-wifi">WI-FI</label>
 				</div>
 				<div class="filter-housing">
@@ -51,18 +50,20 @@
 					<div class="price-input-wrapper flex">
 						<div class="price-input-half flex">
 							<label for="filter-price-min">ОТ</label>
-							<input type="text" name="filter-price-min" id="filter-price-min" pattern="[0-9]|([1-9][0-9])|([1-9][0-9][0-9])|([1-4][0-9][0-9][0-9])" value="0" required>
+							<input type="text" name="filter-price-min" id="filter-price-min" pattern="^(?:\d|[1-9]\d|[1-9]\d\d|[1-4]\d\d\d|5000)$" value="0" required>
 						</div>
 						<div class="price-input-half flex">
 							<label for="filter-price-max">ДО</label>
-							<input type="text" name="filter-price-max" pattern="[1-9]|([1-9][0-9])|([1-9][0-9][0-9])|([1-4][0-9][0-9][0-9])|5000" value="3500" required>
+							<input type="text" name="filter-price-max" id="filter-price-max" pattern="^(?:[1-9]|[1-9]\d|[1-9]\d\d|[1-4]\d\d\d|5000)$" value="3500" required>
 						</div>
 					</div>
 					
-					<div class="filter-scale">
-						<div class="filter-bar"></div>
-						<div class="filter-toggle filter-min-toggle"></div>
-						<div class="filter-toggle filter-max-toggle"></div>
+					<div class="slider" id="slider">
+						<div class="filter-scale">
+							<div class="filter-bar"></div>
+							<div class="filter-toggle filter-min-toggle"></div>
+							<div class="filter-toggle filter-max-toggle"></div>
+						</div>
 					</div>
 					
 					<button type="submit" class="btn filter-btn">ПОКАЗАТЬ</button>
@@ -163,5 +164,7 @@
 			</div>
 		</footer>
 
+<script src="js/nouislider.wNumb.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

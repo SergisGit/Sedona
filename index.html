@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Sedona</title>
 	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body-index">
@@ -85,15 +84,15 @@
 					<div class="search-form-box flex">
 
 						<label for="checkin">ДАТА ЗАЕЗДА:</label>
-						<input type="text" id="checkin" name="checkin" class="date-input" value="24 АПРЕЛЯ 2017">
+						<input type="text" id="checkin" name="checkin" class="date-input" value="24 АПРЕЛЯ 2017" pattern="(0{0,1}[1-9]|[12]\d|3[01]) [А-Яа-яЁё]{3,8} 20(1[7-9]|[23]\d)">
 						<label for="checkout">ДАТА ВЫЕЗДА:</label>
-						<input type="text" id="checkout" name="checkout" class="date-input" value="4 ИЮЛЯ 2017">
+						<input type="text" id="checkout" name="checkout" class="date-input" value="4 ИЮЛЯ 2017" pattern="(0{0,1}[1-9]|[12]\d|3[01]) [А-Яа-яЁё]{3,8} 20(1[7-9]|[23]\d)">
 
 						<div class="adults-quantity flex">
 							<label for="adults">ВЗРОСЛЫЕ:</label>
 							<div class="quantity-box">
 								<a class="quantity-box-minus" href="#">–</a>
-								<input type="text" class="number-of-people" name="adults" id="adults" pattern="[1-9]|(0[1-9])|([1-9][0-9])" value="2">
+								<input type="text" class="number-of-people" name="adults" id="adults" pattern="^(?:[1-9]|0[1-9]|[1-9]\d)$" value="2">
 								<a class="quantity-box-plus" href="#">+</a>
 							</div>
 						</div>
@@ -101,7 +100,7 @@
 							<label for="children">ДЕТИ:</label>
 							<div class="quantity-box">
 								<a class="quantity-box-minus" href="#">–</a>
-								<input type="text" class="number-of-people" name="children" id="children" pattern="[0-9]|(0[1-9])|([1-9][0-9])" value="0">
+								<input type="text" class="number-of-people" name="children" id="children" pattern="^(?:\d|0[1-9]|[1-9]\d)$" value="0">
 								<a class="quantity-box-plus" href="#">+</a>
 							</div>
 						</div>
@@ -125,6 +124,8 @@
 			</div>
 		</footer>
 
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/pickmeup.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
-
 </html>
