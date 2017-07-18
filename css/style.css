@@ -932,6 +932,10 @@ a.btn-social {
 	height: 48px;
 	margin-right: 6px;
 }
+a.btn-social:last-child {
+	margin-right:0
+}
+
 .btn-twit {
 	background: url("../img/sprite.png") -10px -437px;
 }
