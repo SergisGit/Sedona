@@ -987,12 +987,13 @@ input.number-of-people {
 }
 
 /*----- information -----*/
-.main-info img:not(:first-of-type) {
+.main-info img {
 	width: 100%;
 	height: auto;
+}
+.main-info img:not(:first-of-type) {
 	margin-top: 10px;
 }
-
 .main-info p {
 	text-align: justify;
 	margin: 10px 6%;
