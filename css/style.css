@@ -1012,10 +1012,15 @@ input.number-of-people {
 }
 
 /*----- map -----*/
+.main-map {
+	display: flex;
+	flex-direction: column;
+}
 iframe {
 	width: 100%;
-	min-height: 700px;
+	height: 500px;
 	border: none;
+	flex-grow: 1;
 }
 .map-tittle {
 	text-align: center;
