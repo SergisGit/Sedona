@@ -749,7 +749,7 @@ p.definition ~ p {
 .main-index .promo-block {
 	min-height: 256px;
 	width: 33.33%;
-	line-height: 21px;
+	line-height: 20px;
 }
 
 .promo-block.reason-blue {
@@ -819,30 +819,32 @@ p.definition ~ p {
 
 .main-index .concernment {
 	min-height: 291px;
-	padding: 25px 0;
+	padding: 23px 0 110px;
 	position: relative;
 }
 
 p.definition {
 	font-weight: 700;
 	font-size: 21px;
-	margin-bottom: 24px;
+  line-height: 24px;
 }
 
 .description p.definition {
-	margin-bottom: 27px;
+	margin-bottom: 30px;
 }
 
 .concernment p.definition {
 	font-size: 30px;
-	margin-bottom: 28px
+  line-height: 30px;
+	margin-bottom: 28px;
 }
 
 p.reason-number {
 	margin: 24px 0 21px;
 }
 
-.main-index .map {
+.main-index .mapbox {
+  position: relative;
 	background: url(../img/map-index.jpg) 0 0px no-repeat;
   height: 593px;
 }
@@ -853,7 +855,7 @@ p.reason-number {
 	        box-sizing: border-box;
   width: 568px;  
   left: 50%;
-  top: 205px;
+  top: -86px;
 	-webkit-transform: translateX(-50%);
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
